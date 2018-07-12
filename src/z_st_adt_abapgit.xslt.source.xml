@@ -1,0 +1,10 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates" xmlns:ddic="http://www.sap.com/abapxml/types/dictionary" xmlns:abapgit_packages="http://www.sap.com/adt/abapgit_packages">
+  <tt:root name="zadt_abapgit" type="ddic:zadt_abapgit"/>
+  <tt:template>
+    <abapgit_packages:package tt:extensible="deep" tt:ref="zadt_abapgit">
+      <tt:attribute name="package_name" value-ref="package_name"/>
+      <tt:attribute name="username" value-ref="username"/>
+    </abapgit_packages:package>
+  </tt:template>
+</tt:transform>
